@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123a2e">
+  <meta name="description" content="CocoCycle turns coconut waste into circular materials and planet-positive products. Explore B2C concepts, B2B sourcing and our Goa pilot.">
+  <meta property="og:title" content="CocoCycle — From Coconut Waste to Worth">
+  <meta property="og:description" content="A Goa-first circular economy concept: coconut waste into materials and everyday products.">
+  <meta property="og:type" content="website">
+  <title>CocoCycle — From Coconut Waste to Worth</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" as="image" href="assets/hero-coconut.svg" type="image/svg+xml">
+  <script>document.documentElement.classList.add('js')</script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<div class="announcement">
+  <span class="ann-dot"></span> Rooted in Goa. Reimagining coconut waste. <i>•</i> Pilot concept &amp; product exploration
+</div>
+
+<header class="header" id="header">
+  <div class="container nav">
+    <a href="#home" class="logo" aria-label="CocoCycle home">
+      <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#123a2e"/><path d="M20 9.5a10.5 10.5 0 0 1 9.6 6.2" fill="none" stroke="#dce68e" stroke-width="2.6" stroke-linecap="round"/><path d="M30.5 12.4l-.9 3.5-3.5-.9" fill="none" stroke="#dce68e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 30.5a10.5 10.5 0 0 1-9.6-6.2" fill="none" stroke="#dce68e" stroke-width="2.6" stroke-linecap="round"/><path d="M9.5 27.6l.9-3.5 3.5.9" fill="none" stroke="#dce68e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 24.5c-3.8 0-5.6-2.6-5.6-5 3.6 0 5.6 1.2 5.6 5Zm0 0c0-3.4 2-5.2 5.6-5.2 0 2.6-1.8 5.2-5.6 5.2Z" fill="#dce68e"/></svg>
+      <span class="logo-text">Coco<span class="logo-light">Cycle</span><small>WASTE TO WORTH</small></span>
+    </a>
+    <nav id="navLinks" aria-label="Main navigation">
+      <a href="#story">Our Story</a>
+      <a href="#products">Shop Concepts</a>
+      <a href="#business">For Business</a>
+      <a href="#impact">Our Process</a>
+      <a href="#costing">Pilot Economics</a>
+      <a class="nav-cta-mobile" href="#contact">Get in touch</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="cart-trigger" id="cartOpen" aria-label="Open inquiry basket">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a1.5 1.5 0 0 1-1.5 1.3H7.7a1.5 1.5 0 0 1-1.5-1.3L5 8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span class="cart-label">Inquiry basket</span> <b id="cartCount">0</b>
+      </button>
+      <a class="btn btn-small btn-main nav-cta" href="#contact">Get in touch <span class="arr">↗</span></a>
+      <button class="menu" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow reveal"><span class="dot"></span> THE FUTURE IS CIRCULAR</div>
+        <h1 class="reveal d1">From coconut <em>waste</em> to <span class="underlined">worth.</span></h1>
+        <p class="hero-lead reveal d2">Every discarded coconut holds possibility. We’re building a Goa-first ecosystem that turns yesterday’s waste into tomorrow’s materials and everyday essentials.</p>
+        <div class="hero-ctas reveal d3">
+          <a class="btn btn-main" href="#products">Explore products <span class="arr">↗</span></a>
+          <a class="btn btn-outline" href="#business">Partner with us <span class="arr">↗</span></a>
+        </div>
+        <ul class="hero-foot reveal d4">
+          <li><b>01</b> Goa-first pilot</li>
+          <li><b>02</b> Circular materials</li>
+          <li><b>03</b> B2B + B2C</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal d2" id="heroVisual">
+        <div class="orbit orbit-one" aria-hidden="true"></div>
+        <div class="orbit orbit-two" aria-hidden="true"></div>
+        <div class="hero-frame" data-tilt>
+          <img class="hero-photo" src="assets/hero-coconut.svg" alt="Illustration of a sunlit Goa beach with palm trees, coconut husks, a split coconut and a seedling sprouting from it" width="740" height="900" fetchpriority="high">
+        </div>
+        <div class="hero-label top-label">WASTE <span>↗</span> RESOURCE</div>
+        <div class="hero-round"><span>100%</span><small>NEW<br>POSSIBILITIES</small></div>
+        <div class="hero-label bottom-label"><i class="pulse"></i> CIRCULAR BY NATURE</div>
+      </div>
+    </div>
+    <a class="scroll-note" href="#story" aria-label="Scroll to story">SCROLL TO DISCOVER <span>↓</span></a>
+  </section>
+
+  <!-- MARQUEE -->
+  <section class="tape" aria-hidden="true">
+    <div class="tape-track">
+      <span>REDUCE WASTE</span><i>✳</i><span>RETHINK MATERIALS</span><i>✳</i><span>REGENERATE VALUE</span><i>✳</i>
+      <span>REDUCE WASTE</span><i>✳</i><span>RETHINK MATERIALS</span><i>✳</i><span>REGENERATE VALUE</span><i>✳</i>
+      <span>REDUCE WASTE</span><i>✳</i><span>RETHINK MATERIALS</span><i>✳</i><span>REGENERATE VALUE</span><i>✳</i>
+      <span>REDUCE WASTE</span><i>✳</i><span>RETHINK MATERIALS</span><i>✳</i><span>REGENERATE VALUE</span><i>✳</i>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="section story" id="story">
+    <div class="container story-grid">
+      <div class="reveal">
+        <p class="kicker">/ THE BIG PICTURE</p>
+        <h2>Nature made it.<br><i>We make it count.</i></h2>
+      </div>
+      <div class="story-copy reveal d1">
+        <p class="large-body">After the water is gone, a coconut’s story shouldn’t end in a landfill. Across Goa, husks and shells are often discarded despite their potential as useful raw materials.</p>
+        <p>CocoCycle is a proposed collection, processing and product-development ecosystem connecting waste generators with makers, businesses and conscious consumers.</p>
+        <a href="#impact" class="text-link">See how the cycle works <span>↗</span></a>
+      </div>
+    </div>
+
+    <div class="container story-photo-strip reveal">
+      <figure class="story-figure">
+        <img src="assets/goa-coconut.svg" alt="Illustration of a Goan beach at sunset with palm trees, a beach shack and coconuts on the sand" loading="lazy" width="760" height="520">
+        <figcaption>Concept illustration</figcaption>
+      </figure>
+      <div class="story-note">
+        <strong>GOA IS WHERE OUR STORY BEGINS</strong>
+        <p>Working toward cleaner collection streams, more useful coconut materials and a circular economy designed around local partnerships.</p>
+        <a href="#business">Join the pilot conversation ↗</a>
+      </div>
+    </div>
+
+    <div class="container stat-strip reveal">
+      <div><strong><span data-count="3000">3,000</span> <small>kg</small></strong><span>Illustrative monthly input capacity</span></div>
+      <div><strong>₹<span data-count="20">20</span> <small>/kg</small></strong><span>Estimated operating cost per incoming kg</span></div>
+      <div><strong>Goa <small>↗</small></strong><span>Proposed starting point</span></div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="section products-section" id="products">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="kicker">/ DISCOVER THE POSSIBILITIES</p>
+          <h2>Better things,<br><i>from what’s left.</i></h2>
+        </div>
+        <p>Explore future CocoCycle product lines. These are concepts for interest gathering, not products currently available for purchase.</p>
+      </div>
+      <div class="filter-tabs reveal" id="filters" role="group" aria-label="Filter products">
+        <button class="active" data-filter="all" aria-pressed="true">All concepts <em id="countAll"></em></button>
+        <button data-filter="home" aria-pressed="false">Home &amp; lifestyle <em id="countHome"></em></button>
+        <button data-filter="garden" aria-pressed="false">Garden &amp; soil <em id="countGarden"></em></button>
+        <button data-filter="material" aria-pressed="false">Raw materials <em id="countMaterial"></em></button>
+      </div>
+      <div id="productGrid" class="product-grid" aria-live="polite"></div>
+      <div class="product-banner reveal">
+        <span>HAVE A PRODUCT IDEA?</span>
+        <p>We’re exploring thoughtful ways to put coconut waste back to work.</p>
+        <a href="#contact">Let’s create together ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSINESS -->
+  <section class="business-section section" id="business">
+    <div class="container">
+      <div class="business-top reveal">
+        <div>
+          <p class="kicker light">/ FOR BUSINESS</p>
+          <h2>Good for business.<br><i>Better for the planet.</i></h2>
+        </div>
+        <p>From coconut waste generators to sustainable material buyers, we’re building partnerships across the value chain.</p>
+      </div>
+      <div class="business-grid">
+        <article class="reveal">
+          <span class="biz-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M9 11l4-6h6l3 5M23 21l3-5-3-5M13 27h-6l-3-5 4-6M16 10l3-5M12 22l-3 5M20 22l3 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h3>Waste collection partners</h3>
+          <p>Hotels, juice stalls, coconut vendors and restaurants looking to channel discarded coconut biomass toward reuse.</p>
+          <button class="link-button" data-interest="Waste collection partnership">Become a collection partner ↗</button>
+        </article>
+        <article class="reveal d1">
+          <span class="biz-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4l12 6-12 6-12-6 12-6Z M4 16l12 6 12-6 M4 22l12 6 12-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg></span>
+          <h3>Bulk material buyers</h3>
+          <p>Manufacturers, nurseries, agricultural and industrial businesses exploring processed coconut-based inputs.</p>
+          <button class="link-button" data-interest="Bulk raw material sourcing">Discuss bulk sourcing ↗</button>
+        </article>
+        <article class="reveal d2">
+          <span class="biz-icon"><svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="13" width="22" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 9h24v4H4zM16 9v18M16 9c-3-6-9-5-8 0M16 9c3-6 9-5 8 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <h3>Custom &amp; institutional orders</h3>
+          <p>Resorts, colleges, corporates and event teams seeking considered sustainable merchandise and gifting options.</p>
+          <button class="link-button" data-interest="Custom institutional products">Explore custom orders ↗</button>
+        </article>
+      </div>
+      <div class="business-action reveal">
+        <p>Interested in collaborating on a pilot?</p>
+        <a class="btn btn-cream" href="#contact">Request a B2B conversation <span class="arr">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section process" id="impact">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="kicker">/ THE COCOCYCLE LOOP</p>
+          <h2>One coconut.<br><i>Many next chapters.</i></h2>
+        </div>
+        <p>An intentional system designed to capture value at every stage of the coconut’s second life.</p>
+      </div>
+      <ol class="steps">
+        <li class="reveal">
+          <span class="step-no">01 / SOURCE</span>
+          <div class="step-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><ellipse cx="24" cy="26" rx="14" ry="15" fill="#b98652"/><path d="M14 20c4-4 16-4 20 0M13 27c6 3 16 3 22 0M16 34c5 2 11 2 16 0" fill="none" stroke="#7a4a24" stroke-width="1.6" stroke-linecap="round"/><circle cx="19" cy="20" r="1.6" fill="#3b2210"/><circle cx="26" cy="19" r="1.6" fill="#3b2210"/><circle cx="23" cy="24" r="1.6" fill="#3b2210"/></svg></div>
+          <h3>Collect</h3>
+          <p>Work with vendors, hotels and tourism businesses to aggregate coconut discards.</p>
+        </li>
+        <li class="reveal d1">
+          <span class="step-no">02 / PREPARE</span>
+          <div class="step-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="8" fill="#f0a35e"/><g stroke="#e08a3c" stroke-width="3" stroke-linecap="round"><path d="M24 7v6M24 35v6M7 24h6M35 24h6M12 12l4 4M32 32l4 4M12 36l4-4M32 16l4-4"/></g></svg></div>
+          <h3>Process</h3>
+          <p>Sort, clean, dry and size-reduce incoming biomass according to end use.</p>
+        </li>
+        <li class="reveal d2">
+          <span class="step-no">03 / CREATE</span>
+          <div class="step-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6c1 10 4 13 14 14-10 1-13 4-14 14-1-10-4-13-14-14 10-1 13-4 14-14Z" fill="#79b24c"/><path d="M38 32c.4 4 1.6 5 5 5.4-3.4.4-4.6 1.6-5 5.2-.4-3.6-1.6-4.8-5-5.2 3.4-.4 4.6-1.4 5-5.4Z" fill="#dce68e"/></svg></div>
+          <h3>Transform</h3>
+          <p>Develop material streams and prototype products through appropriate processes.</p>
+        </li>
+        <li class="reveal d3">
+          <span class="step-no">04 / REUSE</span>
+          <div class="step-icon"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 24a14 14 0 0 1 24-9.8" fill="none" stroke="#1d5a43" stroke-width="4" stroke-linecap="round"/><path d="M36 7v9h-9" fill="none" stroke="#1d5a43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 24a14 14 0 0 1-24 9.8" fill="none" stroke="#79b24c" stroke-width="4" stroke-linecap="round"/><path d="M12 41v-9h9" fill="none" stroke="#79b24c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3>Return value</h3>
+          <p>Connect useful materials and products with commercial and consumer buyers.</p>
+        </li>
+      </ol>
+      <div class="impact-note reveal">Our ambition: <b>Every coconut deserves a second life.</b> <span>↗</span></div>
+    </div>
+  </section>
+
+  <!-- ECONOMICS -->
+  <section class="section economics" id="costing">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <p class="kicker">/ TRANSPARENT PILOT THINKING</p>
+          <h2>The numbers<br><i>behind the idea.</i></h2>
+        </div>
+        <p>Explore an illustrative Goa pilot cost model. Change throughput or monthly costs to see how the operating cost per incoming kilogram changes.</p>
+      </div>
+      <div class="cost-layout">
+        <div class="cost-panel reveal">
+          <div class="cost-head"><h3>Pilot cost explorer</h3><span class="tag">ASSUMPTION-BASED</span></div>
+          <label for="throughput">Monthly coconut waste processed <b id="throughputLabel">3,000 kg</b></label>
+          <input id="throughput" type="range" min="1000" max="10000" step="250" value="3000">
+          <div class="range-ends"><span>1,000 kg</span><span>10,000 kg</span></div>
+          <label for="monthlyCost">Monthly operating costs (₹)</label>
+          <input id="monthlyCost" type="number" min="0" step="1000" value="60000" inputmode="numeric">
+          <div class="result">
+            <small>ESTIMATED OPERATING COST PER INPUT KG</small>
+            <strong id="costPerKg">₹20.00 <span>/ kg</span></strong>
+            <p id="costDelta" class="delta">Matches the ₹20.00 baseline</p>
+            <p>Monthly operating cost ÷ incoming kilograms processed</p>
+          </div>
+          <button class="reset" id="resetCosts">↺ Reset assumptions</button>
+        </div>
+        <div class="cost-detail reveal d1">
+          <div class="number-tiles">
+            <div><span>ONE-TIME SETUP</span><strong>₹2,00,000</strong><small>Illustrative initial investment</small></div>
+            <div><span>MONTHLY OPERATIONS</span><strong id="costTile">₹60,000</strong><small>Editable in calculator</small></div>
+          </div>
+          <h3>Indicative monthly cost breakdown</h3>
+          <div id="costBreakdown" class="breakdown"></div>
+          <button id="breakdownToggle" class="detail-toggle" aria-expanded="false" aria-controls="costTables">View full cost tables <span>＋</span></button>
+          <div id="costTables" class="cost-tables" hidden>
+            <h4>One-time fixed costs</h4><div id="fixedRows"></div>
+            <h4>Monthly operating costs</h4><div id="monthlyRows"></div>
+            <p>Baseline collection: ₹4/kg; other operating costs: ₹16/kg at 3,000 kg/month. These components are not automatically recalculated when changing the calculator assumptions.</p>
+          </div>
+        </div>
+      </div>
+      <p class="disclaimer reveal"><b>Important:</b> This is an educational planning model, not verified quotations or a profitability forecast. ₹20/kg applies to <b>incoming waste</b>, not finished product; excludes depreciation, financing, product yield, sales and taxes. The operating-cost breakdown reflects only the original ₹60,000 baseline.</p>
+    </div>
+  </section>
+
+  <!-- VISION -->
+  <section class="vision">
+    <div class="vision-bg" aria-hidden="true"></div>
+    <div class="container vision-inner reveal">
+      <p class="kicker light">/ OUR NORTH STAR</p>
+      <h2>Not just a product.<br><i>A new way to see waste.</i></h2>
+      <p>We envision a scalable, circular coconut economy—where discarded husks and shells can become a resource for makers, businesses and communities.</p>
+      <a class="btn btn-cream" href="#contact">Be part of the cycle <span class="arr">↗</span></a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="reveal">
+        <p class="kicker">/ LET’S TALK</p>
+        <h2>Have a coconut<br><i>connection?</i></h2>
+        <p>Whether you’re exploring sustainable products, buying materials, supplying coconut waste or building a collaboration, we’d love to hear from you.</p>
+        <div class="contact-pills"><span>◉ Goa pilot</span><span>◉ B2B partnerships</span><span>◉ B2C interest</span></div>
+      </div>
+      <form id="contactForm" class="contact-form reveal d1" novalidate>
+        <div class="two">
+          <label>Your name <input name="name" required maxlength="100" placeholder="Your name" autocomplete="name"></label>
+          <label>Email address <input name="email" type="email" required placeholder="name@example.com" autocomplete="email"></label>
+        </div>
+        <div class="two">
+          <label>I’m interested in
+            <select name="interest" id="interest" required>
+              <option value="">Choose an option</option>
+              <option>Buying consumer products</option>
+              <option>Waste collection partnership</option>
+              <option>Bulk raw material sourcing</option>
+              <option>Custom institutional products</option>
+              <option>General collaboration</option>
+            </select>
+          </label>
+          <label>Organization (optional) <input name="organization" maxlength="120" placeholder="Company / institution" autocomplete="organization"></label>
+        </div>
+        <label>Tell us a little more <textarea name="message" required minlength="10" maxlength="2000" placeholder="What would you like to explore?" rows="5"></textarea></label>
+        <div class="form-actions">
+          <button class="btn btn-main form-submit" type="submit">Prepare email inquiry <span class="arr">↗</span></button>
+          <button class="btn btn-ghost" type="button" id="copyInquiry">Copy message</button>
+        </div>
+        <p class="form-note" id="contactNotice" role="status">This opens your email app. Please set the contact email in <code>app.js</code> before publishing.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-top">
+    <div>
+      <a href="#home" class="logo footer-logo" aria-label="CocoCycle home">
+        <svg class="logo-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#dce68e"/><path d="M20 9.5a10.5 10.5 0 0 1 9.6 6.2" fill="none" stroke="#123a2e" stroke-width="2.6" stroke-linecap="round"/><path d="M30.5 12.4l-.9 3.5-3.5-.9" fill="none" stroke="#123a2e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 30.5a10.5 10.5 0 0 1-9.6-6.2" fill="none" stroke="#123a2e" stroke-width="2.6" stroke-linecap="round"/><path d="M9.5 27.6l.9-3.5 3.5.9" fill="none" stroke="#123a2e" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 24.5c-3.8 0-5.6-2.6-5.6-5 3.6 0 5.6 1.2 5.6 5Zm0 0c0-3.4 2-5.2 5.6-5.2 0 2.6-1.8 5.2-5.6 5.2Z" fill="#123a2e"/></svg>
+        <span class="logo-text">Coco<span class="logo-light">Cycle</span><small>WASTE TO WORTH</small></span>
+      </a>
+      <p>Every coconut deserves<br>a second life.</p>
+    </div>
+    <div><h4>EXPLORE</h4><a href="#story">Our story</a><a href="#products">Product concepts</a><a href="#impact">Circular process</a></div>
+    <div><h4>WORK WITH US</h4><a href="#business">B2B partnerships</a><a href="#costing">Pilot economics</a><a href="#contact">Contact</a></div>
+    <div><h4>OUR ROOTS</h4><p>Goa, India</p><p>Building a more circular tomorrow.</p></div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year"></span> CocoCycle. A Goa-first venture concept.</span>
+    <span>Artwork is conceptual illustration, not product photography.</span>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top" hidden>↑</button>
+<div id="basketOverlay" class="overlay" hidden></div>
+<aside id="basket" class="basket" role="dialog" aria-modal="true" aria-label="Inquiry basket" aria-hidden="true">
+  <div class="basket-header">
+    <div><small>PRODUCT INTEREST</small><h3>Your inquiry basket</h3></div>
+    <button id="cartClose" aria-label="Close basket">✕</button>
+  </div>
+  <div id="basketItems" class="basket-items"></div>
+  <div class="basket-bottom">
+    <p>No payment is collected. Submit your interest to request availability and details.</p>
+    <button id="basketCheckout" class="btn btn-main" disabled>Inquire about selections <span class="arr">↗</span></button>
+    <button id="clearBasket" class="clear-btn">Clear basket</button>
+  </div>
+</aside>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
